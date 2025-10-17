@@ -36,5 +36,4 @@ All results, code, and model artifacts are Python-based and can be fully reprodu
 
 ---
 
-## Directory Structure
 

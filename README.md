@@ -102,9 +102,8 @@ Threshold tuning proved to be critical, as the optimal decision boundary differe
 
 | Model | Configuration | Dev Micro-F1 | Dev Macro-F1 |
 |------|--------------|-------------:|-------------:|
-| TF-IDF + One-vs-Rest LR | Fixed threshold (0.5) | 0.5785 | 0.3239 |
-| BERT | Sequence length = 192, label-wise tuning | 0.6159 | 0.5022 |
-| **BERT** | **Sequence length = 256, epoch = 4, fine-grained tuning** | **0.7117** | **0.6058** |
+| TF-IDF + LR | Fixed threshold (0.5) | 0.5785 | 0.3239 |
+| **BERT (TR)** | **len=256, epoch=4, grid=0.01–0.99** | **0.7117** | **0.6058** |
 
 Increasing the input sequence length and applying fine-grained, label-specific threshold tuning led to substantial improvements, especially for underrepresented labels.
 
